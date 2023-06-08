@@ -1,0 +1,523 @@
+:root {
+  --red-color: #890620;
+  --black-color: #222222;
+  --h1-Contact-font-size: 42px;
+  --p-Contact-font-size: 14px;
+  --p-font-color: #666666;
+}
+.Contact {
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.Contact-res {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem 4rem;
+  gap: 80px;
+  overflow: hidden;
+}
+.Contact-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.Contact-container-1 h1 {
+  color: var(--black-color);
+  font-size: var(--h1-Contact-font-size);
+  line-height: 60px;
+  text-align: left;
+  font-family: "Volkhov", serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.Contact-container-1 h1 span {
+  color: var(--red-color);
+}
+.Contact-container-1 p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--p-Contact-font-size);
+  line-height: 22px;
+  color: var(--p-font-color);
+  text-align: left;
+  max-width: 555px;
+  min-width: auto;
+}
+.Contact-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.text-input {
+  width: 545px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
+  color: #828282;
+  font-family: "Roboto", sans-serif;
+}
+.input-textarea {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 20px;
+  gap: 10px;
+  width: 545px;
+  height: 149px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  color: #828282;
+  font-family: "Roboto", sans-serif;
+}
+.Send-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  width: 545px;
+  height: 50px;
+  background: #890620;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.Send-btn:active {
+  transform: scale(0.95);
+  transition: ease-out 0.5s;
+}
+.call-get {
+  width: 545px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.call-get-btn {
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  color: #890620;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #890620;
+  border-radius: 5px;
+}
+.call-get-btn:hover {
+  scale: 0.96;
+}
+.direction-text {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.direction-text h1 {
+  color: var(--black-color);
+  font-size: var(--h1-Contact-font-size);
+  line-height: 60px;
+  text-align: left;
+  font-family: "Volkhov", serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.direction-text h1 span {
+  color: var(--red-color);
+}
+.direction-text p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--p-Contact-font-size);
+  line-height: 22px;
+  color: var(--p-font-color);
+  text-align: center;
+}
+.direction-controler {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.direction-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.tenkasi-btn {
+  width: 274px;
+  height: 50px;
+  border: 1px solid #890620;
+  border-radius: 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #890620;
+  font-size: var(--p-Contact-font-size);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1;
+}
+.tirunelveli-btn {
+  width: 274px;
+  height: 50px;
+  border: 1px solid #890620;
+  border-radius: 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #890620;
+  font-size: var(--p-Contact-font-size);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1;
+}
+.tirunelveli-btn:hover,.tenkasi-btn:hover{
+  scale: 0.96;
+}
+.Contact-container-2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-black-background {
+  position: absolute;
+  right: 0;
+  width: 420px;
+  height: 80%;
+  background: #222222;
+}
+.map {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leaf-let-map {
+  width: 511px;
+  height: 568px;
+  z-index: 0;
+}
+.mobile-view {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 1450px) {
+  .contact-black-background {
+    width: 400px;
+    height: 80%;
+  }
+}
+@media (max-width: 1350px) {
+  .contact-black-background {
+    width: 350px;
+    height: 80%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .leaf-let-map {
+    width: 450px;
+    height: 500px;
+  }
+  .text-input {
+    width: 500px;
+    height: 50px;
+  }
+  .input-textarea {
+    width: 500px;
+    height: 149px;
+  }
+  .Send-btn {
+    width: 500px;
+    height: 50px;
+  }
+  .call-get {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .contact-black-background {
+    width: 300px;
+    height: 80%;
+  }
+}
+@media (max-width: 1204px) {
+  :root {
+    --h1-Contact-font-size: 38px;
+  }
+}
+@media (max-width: 1158px) {
+  .Contact-res {
+    gap: 40px;
+  }
+}
+@media (max-width: 1158px) {
+  .contact-black-background {
+    width: 280px;
+    height: 80%;
+  }
+
+  .leaf-let-map {
+    width: 400px;
+    height: 500px;
+  }
+  .text-input {
+    width: 450px;
+    height: 50px;
+  }
+  .input-textarea {
+    width: 450px;
+    height: 149px;
+  }
+  .Send-btn {
+    width: 450px;
+    height: 50px;
+  }
+  .call-get {
+    width: 450px;
+  }
+}
+@media (max-width: 1050px) {
+  .computer-view {
+    visibility: hidden;
+    position: absolute;
+  }
+  .mobile-view {
+    visibility: visible;
+    position: relative;
+  }
+
+  .Contact-res {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 90px;
+  }
+  .Contact-container-2 {
+    background-color: #222222;
+    padding: 4rem 0rem;
+  }
+  .contact-black-background {
+    width: 0;
+    height: 0;
+  }
+  .text-input {
+    width: 100%;
+    height: 50px;
+  }
+  .input-textarea {
+    width: 100%;
+    height: 149px;
+  }
+  .Send-btn {
+    width: 100%;
+    height: 50px;
+  }
+  .call-get {
+    width: 100%;
+  }
+  .Contact-container-1 h1 {
+    text-align: center;
+  }
+  .Contact-container-1 p {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .direction-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 550px) {
+  :root {
+    --h1-Contact-font-size: 30px;
+    --p-Contact-font-size: 12px;
+  }
+  .leaf-let-map {
+    width: 300px;
+    height: 400px;
+  }
+  .Contact-container-1 {
+    gap: 20px;
+  }
+  .Contact-inputs {
+    gap: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .Contact-res {
+    gap: 20px;
+    padding: 0rem 4rem;
+    padding-bottom: 6rem;
+  }
+  .leaf-let-map {
+    width: 280px;
+    height: 400px;
+  }
+  .direction-controler {
+    padding: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .Contact-res {
+    gap: 20px;
+    padding: 0rem 1rem;
+    padding-bottom: 5rem;
+  }
+  .leaf-let-map {
+    width: 280px;
+    height: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .tenkasi-btn {
+    max-width: 274px;
+    min-width: auto;
+  }
+  .tirunelveli-btn {
+    max-width: 274px;
+    min-width: auto;
+  }
+}
+@media (max-width: 325px) {
+  :root {
+    --h1-Contact-font-size: 28px;
+    --p-Contact-font-size: 10px;
+  }
+  .leaf-let-map {
+    width: 240px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 450px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 1700px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 1800px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 600px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 1950px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 650px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 2050px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 700px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 2205px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 750px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 2300px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 800px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 2400px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 900px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 2500px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 950px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 2600px) {
+  .contact-black-background {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 80%;
+    background: #222222;
+  }
+}
+@media (min-width: 1500px) {
+  .Contact-res {
+    width: 1400px;
+  }
+}

@@ -1,0 +1,28 @@
+.vertical-carousel-container {
+    height: 400px; /* Adjust the height as needed */
+    margin: 0 auto;
+    max-width: 600px; /* Adjust the width as needed */
+  }
+  
+  .carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #f8f8f8; /* Adjust the background color as needed */
+    filter: blur(4px); /* Add the blur effect */
+    transition: filter 0.3s ease; /* Add a transition effect for smoother appearance */
+  }
+  
+  .carousel-slide.slick-active {
+    filter: blur(0); /* Remove the blur effect for the active slide */
+  }
+  
+  .slick-dots {
+    bottom: 10px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #888; /* Adjust the dot color as needed */
+  }

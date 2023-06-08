@@ -1,0 +1,102 @@
+:root {
+  --red-color: #890620;
+  --black-color: #222222;
+  --h1-modal-font-size: 42px;
+  --p-modal-font-size: 14px;
+  --p-modal-font-color: #666666;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background: #ffffff; */
+  }
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+/* .where,
+.css-dev-only-do-not-override-15rg2km .ant-float-btn-default .ant-float-btn-body {
+  background-color:transparent;
+} */
+.floating-button-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.floating-button {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #890620;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.floating-color{
+  background-color: #4CAF50;
+}
+.Float-btn-size{
+  font-size: 25px;
+}
+
+  @media (max-width: 850px) {
+    .modal-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    gap: 40px;
+    padding: 2rem;
+    }
+
+
+
+    .modal-text{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .modal-text h1{
+      color: var(--black-color);
+      font-size: var(--h1-modal-font-size);
+      line-height: 60px;
+      text-align: left;
+      font-family: "Volkhov", serif;
+      font-style: normal;
+      font-weight: 700;
+    }
+    .modal-text h1 span {
+      color: var(--red-color);
+    }
+    .modal-text p{
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--p-modal-font-size);
+        line-height: 22px;
+        color: var(--p-font-color);
+        text-align: left;
+        max-width: 555px;
+        min-width: auto;
+      }
+
+    .popup_img {
+      width: 300px;
+      height: 300px;
+    }
+  }

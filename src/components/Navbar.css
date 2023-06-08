@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --navbartextcolor: #222222;
+  --navbarfontsize: 14px;
+  --navbarhovercolor: #890620;
+  --navbarbuttontextcolor: #ffffff;
+  --navbarbuttontextsize: 14px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background: transparent;
+  padding: 0 4rem;
+  color: var(--navbartextcolor);
+  position: fixed;
+  z-index: 9;
+}
+.active-navbar {
+  background-color: #FFFFFF;
+  height: 80px;
+  transition: all 0.3s ease-out 0s;
+}
+.navlogo {
+  cursor: pointer;
+  width: 156.14px;
+  height: 32.49px;
+}
+nav {
+  height: 100%;
+  width: 450px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  color: var(--navbartextcolor);
+  text-decoration: none;
+  font-size: var(--navbarfontsize);
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+nav a:hover {
+  color: #890620;
+}
+.nav-a-active{
+  color: #890620;
+}
+/* nav a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  border-radius: 5px;
+  bottom: -5px;
+  right: 0;
+  background-color: var(--navbarhovercolor);
+  visibility: hidden;
+  transform: scaleX(1);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a .nav-active:before {
+  visibility: visible;
+  transform: scale(1);
+  width: 100%;
+} */
+.call-button {
+  width: 145px;
+  height: 32px;
+  background: #890620;
+  box-shadow: 0px 8px 16px rgba(250, 116, 54, 0.24);
+  border-radius: 5px;
+  border: none;
+  color: var(--navbarbuttontextcolor);
+  font-size: var(--navbarbuttontextsize);
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 1s;
+}
+.call-button:hover {
+  scale: 1.1;
+}
+.nav-res-btn {
+  visibility: hidden;
+  position: absolute;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+}
+.nav-res-close-btn {
+  visibility: hidden;
+  position: absolute;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+}
+@media (max-width: 1000px) {
+  .nav-res-btn {
+    visibility: visible;
+    position: relative;
+  }
+  .nav-res-close-btn {
+    visibility: visible;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+  }
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: -300vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: #f5f5f5;
+    transition: 1s;
+    z-index: 99999;
+  }
+  nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .responsive_nav {
+    transform: translateX(300vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 1.9rem;
+    left: 2rem;
+    color: black;
+  }
+  .call-button {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --navbarfontsize: 16px;
+    --navbarbuttontextsize: 16px;
+  }
+  .hire-button {
+    width: 100px;
+    height: 40px;
+  }
+  .navlogo {
+    width: 120px;
+    height: 41px;
+  }
+  .nav-btn {
+    font-size: 21px;
+  }
+  .header {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 450px) {
+  :root {
+    --navbarfontsize: 16px;
+    --navbarbuttontextsize: 14px;
+  }
+  .hire-button {
+    width: 85px;
+    height: 35px;
+  }
+  .navlogo {
+    width: 110px;
+    height: 41px;
+  }
+  .nav-btn {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 350px) {
+  :root {
+    --navbarfontsize: 16px;
+    --navbarbuttontextsize: 12px;
+  }
+  .hire-button {
+    width: 75px;
+    height: 30px;
+  }
+  .navlogo {
+    width: 90px;
+    height: 41px;
+  }
+  .nav-btn {
+    font-size: 17px;
+  }
+}
+@media (max-width: 280px) {
+  :root {
+    --navbarfontsize: 16px;
+    --navbarbuttontextsize: 11px;
+  }
+  .hire-button {
+    width: 65px;
+    height: 25px;
+  }
+  .navlogo {
+    width: 80px;
+    height: 41px;
+  }
+}
