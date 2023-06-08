@@ -43,26 +43,29 @@ function Testimonials() {
           <div className="test-container">
             <Slider {...settings}>
               <div className="test-1 ">
-                <p>“ Nice environment Food is good ”</p>
+                <div className="test-1-center">      <p>“ Nice environment Food is good ”</p>
                 <span>
                   <h2>Issai Kutties</h2>
-                </span>
+                </span></div>
+          
               </div>
               <div className="test-1">
-                <p>
+              <div className="test-1-center">  <p>
                  “Rooms are good, nice place to stay ”
                 </p>
                 <span>
                   <h2> Sambeth R</h2>
-                </span>
+                </span></div>
+              
               </div>
               <div className="test-1">
-                <p>
+              <div className="test-1-center">    <p>
                   “Great environment and good food provided”
                 </p>
                 <span>
                   <h2> Nanthini M</h2>
-                </span>
+                </span></div>
+            
               </div>
             </Slider>
           </div>
